@@ -24,8 +24,6 @@ def primes(number_of_primes):
 
         num += 1 # Moves to the next num
 
-        if number_of_primes == 0:
-            raise ValueError("Input is 0!!!")
 
     return list
 
