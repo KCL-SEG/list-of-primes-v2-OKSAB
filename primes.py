@@ -5,6 +5,9 @@ def primes(number_of_primes):
     list = [] # Empty list to fill with prime numbers
     num = 2 # First prime number 
 
+    if number_of_primes <= 0:
+        raise ValueError("Input must be greater than zero")
+
     # To give the number of prime wanted
     while len(list) < number_of_primes:
         is_prime = True
@@ -21,6 +24,10 @@ def primes(number_of_primes):
 
         num += 1 # Moves to the next num
 
+        if number_of_primes == 0:
+            raise ValueError("Input is 0!!!")
+
     return list
 
 print(primes(10))
+
